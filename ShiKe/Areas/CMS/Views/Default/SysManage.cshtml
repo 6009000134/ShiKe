@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "SysManage";
+    Layout = "~/Areas/CMS/Views/Shared/_Layout.cshtml";
+}
+<script>
+    $().ready(function () {
+        $("#leftCollapse").click(function () {
+            $("#left").width(100);
+        });
+        $("ul>li>a").click(function () {
+            $("ul>li>a~ul").removeClass("in");
+            $(this).siblings("ul").addClass("in");
+        });
+        //$("ul:li").click(function () {
+        //    var cn = $(this).attr("class");
+        //    if (cn=="active") {
+        //        $("ul:a").removeClass("active")
+        //    }
+        //    else {
+        //        $(this).addClass("active")
+        //    }
+
+        //});
+    });
+</script>
+<!--Top Nav-->
+<div>
+    <nav class="nav col-lg-10 col-lg-offset-2" style="background-color:black;height:50px;">
+        <a href="javascript:void(0)" id="leftCollapse" class="pull-left" style="padding:15px;" title="缩放"><span class="glyphicon glyphicon-list" style="color:white;font-size:24px;"></span></a>
+    </nav>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="left" class="col-lg-2" style="background-color:#f8f8f8;position:fixed;min-height:1px;bottom:0px;top:0px;z-index:999;transition: all 1s;-moz-transition: all 1s;-webkit-transition: all 1s;-o-transition:all 1s;">
+            <div class="row">
+                <div class="col-lg-12" style="background-color:black;height:50px;border:1px solid gray;">
+                    <span title="后台管理" style="padding:15px;color:white;font-size:24px;">力同科技</span>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav">
+                    <li class="">
+                        <a href="javascript:void(0)">菜单1<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                        <ul class="nav collapse">
+                            <li class=""><a class="" href="#">子菜单1</a></li>
+                            <li><a href="#">子菜单2</a></li>
+                            <li><a href="#">子菜单3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">菜单2<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                        <ul id="" class="nav collapse">
+                            <li><a href="#">子菜单2-1</a></li>
+                            <li><a href="#">子菜单2-2</a></li>
+                            <li><a href="#">子菜单2-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a>菜单3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-2">
+
+        </div>
+    </div>
+</div>
+<!--End Top Nav-->

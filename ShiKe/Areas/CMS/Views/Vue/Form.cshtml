@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Areas/CMS/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Form</h2>
+<div class="container-fluid" id="vue">
+    <form>
+        <template v-for="item in input">
+            <div class="form-group">
+                {{item.varchar}}
+                <label>{{item.name}}</label>
+                <input type="text" v-on:change="fun2(item.value)" v-on:mouseenter="fun3(item.value)" class="form-control" v-model="item.value" />
+            </div>
+        </template>
+        <button v-on:click.prevent="fun1">Console.Log</button>
+    </form>
+</div>
+<script>
+    var vm = new Vue({        
+        data: {
+            input: [
+                { name: "用户名", value: "qwerty", type: "varchar" },
+                { name: "密码", value: "************", type: "password" }],
+            checkbox: {
+                记住我: false
+            }
+        },
+        methods: {
+            fun1: function () {
+                console.log(JSON.stringify(this.input));
+            },
+            fun2: function (val) {
+                console.log('event_change:'+val);
+            },
+            fun3: function (val) {
+                console.log("event_mouseenter"+val);
+            }
+        },
+        watch: {
+
+        }
+    }).$mount('#vue')
+</script>

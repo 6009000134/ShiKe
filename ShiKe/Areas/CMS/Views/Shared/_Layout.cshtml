@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <script src=@Url.Content("~/scripts/jquery-1.9.1.min.js")></script>
+    <link href=@Url.Content("~/Bootstrap/css/bootstrap.css") rel="stylesheet" />
+    <script src=@Url.Content("~/Bootstrap/js/bootstrap.js")></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src=@Url.Content("~/scripts/vue-router.js")></script>
+    @RenderSection("header", false)
+</head>
+<body>
+    @{Html.RenderPartial("~/Areas/CMS/Views/Shared/_Header.cshtml");}   
+    @RenderBody()
+    @{Html.RenderPartial("~/Areas/CMS/Views/Shared/_Header.cshtml");}
+</body>
+</html>

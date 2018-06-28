@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiKe", "ShiKe\ShiKe.csproj", "{7F4D96DF-2B02-48BA-B00E-EDAAFCA2EA65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiKe.Tests", "ShiKe.Tests\ShiKe.Tests.csproj", "{5DA53528-95DF-4D50-BBBC-CBA87092AA57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{6DECF4BA-1D5E-404D-82C2-960835BEB268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F4D96DF-2B02-48BA-B00E-EDAAFCA2EA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4D96DF-2B02-48BA-B00E-EDAAFCA2EA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4D96DF-2B02-48BA-B00E-EDAAFCA2EA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4D96DF-2B02-48BA-B00E-EDAAFCA2EA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA53528-95DF-4D50-BBBC-CBA87092AA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA53528-95DF-4D50-BBBC-CBA87092AA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA53528-95DF-4D50-BBBC-CBA87092AA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA53528-95DF-4D50-BBBC-CBA87092AA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DECF4BA-1D5E-404D-82C2-960835BEB268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DECF4BA-1D5E-404D-82C2-960835BEB268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DECF4BA-1D5E-404D-82C2-960835BEB268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DECF4BA-1D5E-404D-82C2-960835BEB268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
